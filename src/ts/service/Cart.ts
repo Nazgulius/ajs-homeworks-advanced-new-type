@@ -10,4 +10,14 @@ export default class Cart {
     get items(): Buyable[] {
         return [...this._items]; 
     }
+
+    sumPrice(): number {
+      let sum: number = 0;
+      for (const key in this._items) {
+        sum += this._items[key].price;        
+      }
+      return sum;
+    }
+
+    
 }

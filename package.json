@@ -38,5 +38,13 @@
     "webpack": "^5.88.2",
     "webpack-cli": "^5.1.4",
     "webpack-dev-server": "^4.15.1"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Nazgulius/ajs-homeworks-advanced-new-type.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Nazgulius/ajs-homeworks-advanced-new-type/issues"
+  },
+  "homepage": "https://github.com/Nazgulius/ajs-homeworks-advanced-new-type#readme"
 }
