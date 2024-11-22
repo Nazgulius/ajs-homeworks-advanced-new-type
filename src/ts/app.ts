@@ -13,3 +13,8 @@ cart.add(new Movie(1010, 'The Avengers', 2012, 'U.S.A', 'Aberagers Assemble!', '
 console.log(cart.items);
 console.log(cart.items[0].price);
 console.log(cart.sumPrice());
+console.log(cart.sumPriceDiscount(50));
+
+cart.deleteItem(1001);
+console.log(cart.items);
+
