@@ -16,5 +16,6 @@ console.log(cart.sumPrice());
 console.log(cart.sumPriceDiscount(50));
 
 cart.deleteItem(1001);
+
 console.log(cart.items);
 

@@ -12,26 +12,21 @@ export default class Cart {
     }
 
     sumPrice(): number {
-      let sum: number = 0;
-      for (const key in this._items) {
-        sum += this._items[key].price;        
-      }
-      return sum;
+      return this._items.reduce(
+        function(sum, item): number {
+          return Number(sum) + item.price;
+        }, 0
+      )
     }
 
     sumPriceDiscount(discount: number): number {
-      let sum: number = 0;
-      for (const key in this._items) {
-        sum += this._items[key].price;        
-      }
+      const sum = this.sumPrice();
       return sum - (sum * discount / 100);
     }
 
     deleteItem(id: number): void {
-      for (let i = 0; i < this._items.length; i++) {
-        if (id === this._items[i].id) {
-          this._items.splice(i, 1);
-        }    
-      }
+      this._items = this._items.filter((item) => { 
+        return id !== item.id;
+      })
     }
 }
